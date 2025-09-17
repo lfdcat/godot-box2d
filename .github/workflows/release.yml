@@ -20,7 +20,7 @@ jobs:
           tag_prefix: "v"
           debug: true
       - name: Download artifacts
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: Godot Box2D
           path: godot-box2d
