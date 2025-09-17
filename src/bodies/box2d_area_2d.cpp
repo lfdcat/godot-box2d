@@ -60,12 +60,14 @@ void Box2DArea2D::on_body_exit(b2Fixture *p_collider_handle, Box2DBody2D *p_body
 	if (p_update_detection) {
 		// Remove from currently detected bodies
 		auto foundIt = detected_bodies.find(p_body_rid);
-		ERR_FAIL_COND(foundIt == detected_bodies.end());
-		ERR_FAIL_COND(foundIt->value.count == 0);
-		if (foundIt->value.count-- == 1) {
-			detected_bodies.remove(foundIt);
-			if (p_body) {
-				p_body->remove_area(this);
+		// ERR_FAIL_COND(foundIt == detected_bodies.end());
+		if (foundIt != detected_bodies.end()) {
+			ERR_FAIL_COND(foundIt->value.count == 0);
+			if (foundIt->value.count-- == 1) {
+				detected_bodies.remove(foundIt);
+				if (p_body) {
+					p_body->remove_area(this);
+				}
 			}
 		}
 	}
