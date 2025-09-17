@@ -64,8 +64,7 @@ Curently the Godot Box2d addon builds for:
 
 ## Installation
 
-- Automatic (Recommended): Download the plugin from the official [Godot Asset Store](https://godotengine.org/asset-library/asset/2007) using the `AssetLib` tab in Godot.
-- Manual: Download the [Github Release](https://github.com/appsinacup/godot-box2d/releases/latest) `godot-box2d.zip` and move only the `addons\` folder into your project `addons\` folder.
+Download the [Github Release](https://github.com/appsinacup/godot-box2d/releases/latest) `godot-box2d.zip` and move only the `addons\` folder into your project `addons\` folder.
 
 After installing, go to `Advanced Settings` -> `Physics` -> `2D`. Change `Physics Engine` to `Box2D`.
 
@@ -102,3 +101,7 @@ The Box2D library is developed and maintained by Erin Catto and is provided unde
 All code in this repository is provided under the MIT license. See `LICENSE` for more details and `THIRDPARTY` for third-party licenses.
 
 Based on [rburing/physics_server_box2d](https://github.com/rburing/physics_server_box2d). Many thanks to you for starting implementation on this!
+
+---
+
+**This is an unofficial fork maintained by [your-name/username] for personal use and bug fixes.**
