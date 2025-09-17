@@ -5,18 +5,7 @@
 
 ## NOTE
 
-Currently focusing more on the [godot rapier physics](https://github.com/appsinacup/godot-rapier-physics) lib. And since this is pretty much identical in functionality with that one, but, at least at the time of writting, the rapier one has:
-- Serialization thanks to rust language
-- Cross platform determinism
-- 2d and 3d
-- API that is much closer to godot one than box2d one.
-- Better safety (this one is copied after Godot Physics, and that one has a lot of raw pointers, as does this implementation)
-
-If anyone wants to continue on this or contribute, they can make a fork or ask on discord about it.
-
-## NOTE
-
-Currently waiting for [box2c](https://github.com/erincatto/box2c) to be released. New issues won't be fixed until then. In meantime try [rapier2d](https://github.com/appsinacup/godot-rapier-2d) physics engine.
+This is primarily for my personal use to fix specific issues I've encountered, but I'm open to community issues and pull requests.
 
 <p align="center">
 	<a href="https://github.com/appsinacup/godot-box2d/actions/workflows/runner.yml">
