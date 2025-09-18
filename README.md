@@ -96,4 +96,4 @@ Based on [rburing/physics_server_box2d](https://github.com/rburing/physics_serve
 
 ---
 
-**This is an unofficial fork maintained by [your-name/username] for personal use and bug fixes.**
+**This is an unofficial fork maintained by lfdcat for personal use and bug fixes.**
