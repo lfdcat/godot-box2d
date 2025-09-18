@@ -4,7 +4,7 @@ on:
 
 jobs:
   android:
-    runs-on: "ubuntu-20.04"
+    runs-on: "ubuntu-latest"
     name: Android Build ${{ matrix.arch }}
     strategy:
       fail-fast: false
