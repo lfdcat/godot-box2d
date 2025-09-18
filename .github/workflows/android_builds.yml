@@ -36,3 +36,6 @@ jobs:
 
       - name: Upload ${{ matrix.arch }}
         uses: ./.github/actions/upload
+        with:
+          arch: ${{ matrix.arch }}
+          platform: android
