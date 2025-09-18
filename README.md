@@ -1,27 +1,23 @@
 <p align="center">
 	<img width="128px" src="box2d_icon.svg"/> 
-	<h1 align="center">Godot Box2D - UNMAINTAINED</h1> 
+	<h1 align="center">Godot Box2D</h1> 
 </p>
 
 ## NOTE
 
 This is primarily for my personal use to fix specific issues I've encountered, but I'm open to community issues and pull requests.
 
+## FIXES
+
+[Freeing a RigidBody2D containing an Area2D node triggers an error condition](https://github.com/appsinacup/godot-box2d/issues/95)
+
+## 
+
 <p align="center">
-	<a href="https://github.com/appsinacup/godot-box2d/actions/workflows/runner.yml">
-        <img src="https://github.com/appsinacup/godot-box2d/actions/workflows/runner.yml/badge.svg?branch=main"
-            alt="chat on Discord"></a>
     <a href="https://github.com/erincatto/box2d" alt="Box2D Version">
         <img src="https://img.shields.io/badge/Box2D-v2.4.1-%23478cbf?logoColor=white" /></a>
     <a href="https://github.com/godotengine/godot-cpp" alt="Godot Version">
         <img src="https://img.shields.io/badge/Godot-v4.2-%23478cbf?logo=godot-engine&logoColor=white" /></a>
-    <a href="https://github.com/appsinacup/godot-box2d/graphs/contributors" alt="Contributors">
-        <img src="https://img.shields.io/github/contributors/appsinacup/godot-box2d" /></a>
-    <a href="https://github.com/appsinacup/godot-box2d/pulse" alt="Activity">
-        <img src="https://img.shields.io/github/commit-activity/m/appsinacup/godot-box2d" /></a>
-    <a href="https://discord.gg/56dMud8HYn">
-        <img src="https://img.shields.io/discord/1138836561102897172?logo=discord"
-            alt="Chat on Discord"></a>
 </p>
 <p align="center">
 <img src="stability-comparison.gif"/>
@@ -64,13 +60,9 @@ Curently the Godot Box2d addon builds for:
 
 ## Installation
 
-Download the [Github Release](https://github.com/appsinacup/godot-box2d/releases/latest) `godot-box2d.zip` and move only the `addons\` folder into your project `addons\` folder.
+Download the latest github release (or pre-release) `godot-box2d.zip` and move only the `addons\` folder into your project `addons\` folder.
 
 After installing, go to `Advanced Settings` -> `Physics` -> `2D`. Change `Physics Engine` to `Box2D`.
-
-Video Tutorial:
-
-[![Tutorial](https://img.youtube.com/vi/T_vFVh5qZiY/0.jpg)](https://www.youtube.com/watch?v=T_vFVh5qZiY)
 
 ## Features
 
