@@ -6,6 +6,7 @@ on:
 env:
   EM_VERSION: 3.1.39
   EM_CACHE_FOLDER: "emsdk-cache"
+  EM_CACHE_KEY: "emscripten-${{ github.run_id }}"
 
 jobs:
   web:
@@ -23,7 +24,7 @@ jobs:
           fetch-depth: 0
 
       - name: Set up Emscripten latest
-        uses: mymindstorm/setup-emsdk@v12
+        uses: mymindstorm/setup-emsdk@v14
         with:
           version: ${{env.EM_VERSION}}
           actions-cache-folder: ${{env.EM_CACHE_FOLDER}}
