@@ -20,11 +20,11 @@ jobs:
           tag_prefix: "v"
           debug: true
       - name: Download all artifacts
-      uses: actions/download-artifact@v4
-      with:
-        path: artifacts
-        pattern: godot-box2d-*
-        merge-multiple: true
+        uses: actions/download-artifact@v4
+        with:
+          path: artifacts
+          pattern: godot-box2d-*
+          merge-multiple: true
       - name: Display structure of downloaded files
         run: ls -R
         working-directory: artifacts
