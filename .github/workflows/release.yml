@@ -9,7 +9,7 @@ jobs:
       contents: write
     steps:
       - name: Checkout 
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           submodules: true
           fetch-depth: 0
@@ -19,21 +19,25 @@ jobs:
           bump_each_commit: true
           tag_prefix: "v"
           debug: true
-      - name: Download artifacts
-        uses: actions/download-artifact@v4
-        with:
-          name: Godot Box2D
-          path: godot-box2d
+      - name: Download all artifacts
+      uses: actions/download-artifact@v4
+      with:
+        path: artifacts
+        pattern: godot-box2d-*
+        merge-multiple: true
       - name: Display structure of downloaded files
         run: ls -R
-        working-directory: godot-box2d
+        working-directory: artifacts
       - name: Delete draft release(s)
         uses: hugo19941994/delete-draft-releases@v1.0.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Archive
         shell: sh
-        run: zip -r "godot-box2d.v${{steps.version.outputs.version}}.zip" godot-box2d
+        run: |
+          mkdir -p godot-box2d
+          cp -r artifacts/* godot-box2d/
+          zip -r "godot-box2d.v${{steps.version.outputs.version}}.zip" godot-box2d
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
